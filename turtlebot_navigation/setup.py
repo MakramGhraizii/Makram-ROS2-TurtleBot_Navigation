@@ -25,6 +25,7 @@ setup(
             'robot_driver_node = turtlebot_navigation.robot_driver:main',
             'wall_finder_service_node = turtlebot_navigation.wall_finder:main',
             'lap_time_action_server_node = turtlebot_navigation.lap_time_action_server:main',
+            'lap_time_action_client_node = turtlebot_navigation.lap_time_action_client:main',
         ],
     },
 )
