@@ -23,7 +23,7 @@ setup(
     entry_points={
         'console_scripts': [
             'robot_driver_node = turtlebot_navigation.robot_driver:main',
-            
+            'wall_finder_service_node = turtlebot_navigation.wall_finder:main',
         ],
     },
 )
