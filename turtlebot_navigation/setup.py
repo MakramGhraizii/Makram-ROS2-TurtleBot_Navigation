@@ -26,6 +26,7 @@ setup(
             'wall_finder_service_node = turtlebot_navigation.wall_finder:main',
             'lap_time_action_server_node = turtlebot_navigation.lap_time_action_server:main',
             'lap_time_action_client_node = turtlebot_navigation.lap_time_action_client:main',
+            'visualize_node = turtlebot_navigation.visualize:main',
         ],
     },
 )
