@@ -63,9 +63,9 @@ cd ~/ros2_ws
 colcon build
 source install/setup.bash
 ```
-## Launch the Package
+## Launch the Package (simultaneously run gazebo)
 ```sh
-ros2 launch warehouse_robot launch.py item_name:=item1 quantity:=40
+ros2 launch turtlebot_navigation launch.py
 
 ```
 or to run each node separately:
@@ -75,4 +75,10 @@ ros2 run turtlebot_navigation wall_finder_service_node
 ros2 run turtlebot_navigation lap_time_action_server_node
 ros2 run turtlebot_navigation lap_time_action_client_node
 ros2 run turtlebot_navigation visualize_node
+```
+and on another terminal: 
+```sh
+source /opt/ros/humble/setup.bash
+export TURTLEBOT3_MODEL=burger
+ros2 launch turtlebot3_gazebo turtlebot3_dqn_stage1.launch.py
 ```
